@@ -1,2 +1,4 @@
 1 : Find the most commited author
  git shortlog -nse | head -1
+ 
+ 2 : git log --pretty=format: --name-only |grep -v -e '^$'| sort | uniq -c | sort -rg | head -10
