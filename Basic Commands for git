@@ -1,0 +1,2 @@
+1 : Find the most commited author
+ git shortlog -nse | head -1
