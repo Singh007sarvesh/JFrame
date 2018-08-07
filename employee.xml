@@ -1,0 +1,32 @@
+<employees>
+  <employee id="1113">
+    <firstName>Rakesh</firstName>
+    <lastName>Mishra</lastName>
+   	<DOB>2008-11-11</DOB>
+   	<aadharId>923950784123</aadharId>
+   	<gender>Male</gender>
+   	<email>sarvesh@codekraft.in</email>
+   	<userName>00sarvesh</userName>
+   	<password>1234</password>
+  </employee>
+  <employee id="1122">
+    <firstName>Rakesh</firstName>
+    <lastName>Mishra</lastName>
+   	<DOB>2008-11-11</DOB>
+   	<aadharId>823850735154</aadharId>
+   	<gender>Male</gender>
+   	<email>007sarveshsingh@gmail.com</email>
+   	<userName>mohit12</userName>
+   	<password>1234</password>
+  </employee>
+  <employee id="1131">
+    <firstName>Rakesh</firstName>
+    <lastName>Mishra</lastName>
+   	<DOB>2008-11-11</DOB>
+   	<aadharId>723752714123</aadharId>
+   	<gender>Male</gender>
+   	<email>sarveshsdfcodekraft.in</email>
+   	<userName>kar123tik</userName>
+   	<password>1234</password>
+  </employee>
+</employees>
