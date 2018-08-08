@@ -13,15 +13,6 @@ public class DatabaseConnection
   	{ 
 	    try
 	    {     
-	              
-	      //SaxParserFactory saxParserFactory=new SaxParserFactory();
-	    	EmailValidate emailValidate=new EmailValidate();
-	    	if(emailValidate.isEmailValid(emp.email));
-	    	else
-	    	{
-	    		System.out.println("Plz Enter Valid Email");
-	        	return;
-	      	}
 	      	String sql= ("insert into emp_records values(\""+emp.firstName+"\",\""+emp.lastName+"\",\" " +emp.dob+"\",\""+emp.aadharId+"\",\""+emp.gender
 	                                                        +"\",\""+emp.email+"\",\""+emp.userName+"\",\""+emp.password+"\");");
 	      	statement.executeUpdate(sql);  

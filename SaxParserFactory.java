@@ -8,33 +8,27 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 import java.sql.*;
+import java.io.File;
  
-public class SaxParserFactory
+public class SaxParserFactory 
 {
-   
-  public SaxParserFactory()
+  SaxHandler handler = new SaxHandler(); 
+  public List<Employee> readSaxParserFactory(File file) throws Exception
   {
     try
     {
       SAXParserFactory parserFactor = SAXParserFactory.newInstance();
       SAXParser parser = parserFactor.newSAXParser();
-      SaxHandler handler = new SaxHandler();
-      parser.parse(ClassLoader.getSystemResourceAsStream("employee.xml"),handler);
+      
+      parser.parse(file,handler);
 
-    //Printing the list of employees obtained from XML
-      DatabaseConnection databaseConnection=new DatabaseConnection();
-      for ( Employee emp : handler.empList)
-      {
-        
-        databaseConnection.DatabaseConnection1(emp);
-        //con.insert(emp);
-      }
-      databaseConnection.closeConnection();
+      return handler.empList;
     }
     catch(Exception e)
     {
       System.out.println(e);
     }
+    return handler.empList;
 
   }
 
